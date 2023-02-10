@@ -51,7 +51,7 @@
 #permissions for CSVT
 /dev/smd11                0660   radio      radio
 
-/dev/radio0               0640   system     system
+/dev/radio0               0644   system     system
 /dev/rfcomm0              0660   bluetooth  bluetooth
 /dev/ttyUSB0              0660   bluetooth  bluetooth
 /dev/smdcntl0             0640   radio      radio
@@ -150,7 +150,6 @@
 /dev/msm_preproc_ctl      0660   system     audio
 /dev/msm_rtac             0660   system     audio
 /dev/msm_voicememo        0660   system     audio
-/dev/radio0               0640   fm_radio   fm_radio
 /dev/smd3                 0660   bluetooth  net_bt_stack
 /dev/smd2                 0660   bluetooth  net_bt_stack
 /dev/ttyHSL1              0660   system     system
@@ -182,13 +181,6 @@
 /sys/devices/soc.0/78b6000.i2c/i2c-0/0-*            max_latency    0660    input    system
 /sys/devices/soc.0/78b6000.i2c/i2c-0/0-*            flush          0660    input    system
 /sys/devices/soc.0/78b6000.i2c/i2c-0/0-*            calibrate      0660    input    system
-
-# xym add begin
-/sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            set_calibrate_data      0660    input    system
-/sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            cali           0660    input    system
-/sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            cali_data      0660    input    system
-# xym add end
-
 /sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            enable         0660    input    system
 /sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            poll_delay     0660    input    system
 /sys/devices/soc.0/78b5000.i2c/i2c-1/1-*            enable_wakeup  0660    input    system
@@ -245,3 +237,5 @@
 
 # Add device block for FRP
 /dev/block/bootdevice/by-name/config    0660   system     system
+
+/dev/block/mmcblk0p13    0660   system     system

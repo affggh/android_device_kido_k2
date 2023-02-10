@@ -14,5 +14,4 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/zte/achill
-
+LOCAL_PATH := device/kido/k2

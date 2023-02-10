@@ -20,16 +20,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit from achill device
-$(call inherit-product, device/zte/achill/device.mk)
+# $(call inherit-product, device/zte/achill/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Inherit from msm8909 device
+$(call inherit-product, device/kido/k2/device.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := achill
-PRODUCT_NAME := omni_achill
-PRODUCT_BRAND := zte
-PRODUCT_MODEL := Z828
-PRODUCT_MANUFACTURER := zte
-PRODUCT_RELEASE_NAME := zte Z828
+PRODUCT_DEVICE := k2
+PRODUCT_NAME := omni_k2
+PRODUCT_BRAND := kido
+PRODUCT_MODEL := KIDO K2
+PRODUCT_MANUFACTURER := kido
+PRODUCT_RELEASE_NAME := kido k2
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRIVATE_BUILD_DESC="msm8909-user 5.1.1 XXXXCN00X1000DPX1711220 eng.buildfarm.20171122.141329 test-keys"
+
+BUILD_FINGERPRINT := Zeusis/msm8909/msm8909:5.1.1/XXXXCN00X1000DPX1711220/buildfarm11221415:user/test-keys

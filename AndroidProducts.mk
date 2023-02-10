@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_achill.mk
+     $(LOCAL_DIR)/omni_k2.mk

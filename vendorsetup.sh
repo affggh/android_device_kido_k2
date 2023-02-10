@@ -14,5 +14,6 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_achill-userdebug
-add_lunch_combo omni_achill-eng
+add_lunch_combo omni_k2-user
+add_lunch_combo omni_k2-userdebug
+add_lunch_combo omni_k2-eng

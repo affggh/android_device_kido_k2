@@ -97,10 +97,3 @@ subsystem adf
 /sys/devices/virtual/usb_composite/*   enable      0664  root   system
 /sys/devices/system/cpu/cpu*   cpufreq/scaling_max_freq   0664  system system
 /sys/devices/system/cpu/cpu*   cpufreq/scaling_min_freq   0664  system system
-
-#add by ZTE_BOOT for kill switch
-/dev/block/bootdevice/by-name/oem  0660 system system
-
-#add by ZTE_BOOT to disable sd update
-/dev/block/bootdevice/by-name/ztecfg 0660 system system
-
